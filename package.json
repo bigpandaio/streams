@@ -1,0 +1,19 @@
+{
+  "name": "bp-streams",
+  "version": "0.1.0",
+  "description": "Useful streams",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigpandaio/streams.git"
+  },
+  "keywords": [
+    "streams"
+  ],
+  "author": "Shahar Kedar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigpandaio/streams/issues"
+  },
+  "homepage": "https://github.com/bigpandaio/streams"
+}
