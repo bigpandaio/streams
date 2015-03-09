@@ -1,4 +1,4 @@
-# BigPanda Streams [![Build Status](https://travis-ci.org/bigpandaio/streams.svg?branch=develop)](https://travis-ci.org/bigpandaio/streams)
+# BigPanda Streams [![Build Status](https://travis-ci.org/bigpandaio/streams.svg?branch=master)](https://travis-ci.org/bigpandaio/streams)
 
 Simple but useful streams for various use cases
 
