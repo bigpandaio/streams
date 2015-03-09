@@ -12,7 +12,7 @@ var LineInputStream = require('bp-streams).LineInputStream;
 var stream = new LineInputStream(options);
 ```
 
-options:
+__options:__
 
 | Name          | Description           | Default  |
 | :------------ |:-------------| :-----:|
@@ -29,7 +29,7 @@ var FilesystemPersistStream = require('bp-streams).FilesystemPersistStream;
 var stream = new FilesystemPersistStream(options);
 ```
 
-options:
+__options:__
 
 | Name          | Description           | Default  |
 | :------------ |:-------------| :-----:|
