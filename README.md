@@ -8,7 +8,7 @@ Transform stream that splits text into lines
 
 ### Usage:
 ```javascript
-var LineInputStream = require('bp-streams).LineInputStream;
+var LineInputStream = require('bp-streams').LineInputStream;
 var stream = new LineInputStream(options);
 ```
 
