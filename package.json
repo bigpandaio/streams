@@ -28,6 +28,7 @@
     "stream-buffers": "^2.1.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.3.5"
+    "aws-sdk": "^2.3.5",
+    "s3-upload-stream": "^1.0.7"
   }
 }
