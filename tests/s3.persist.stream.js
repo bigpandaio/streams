@@ -3,7 +3,6 @@ var AWS = require('aws-sdk');
 var s3 = new AWS.S3();
 var streamBuffers = require("stream-buffers");
 var crypto = require('crypto');
-var Promise = require('bluebird');
 
 describe('S3 persist stream tests', function() {
 
