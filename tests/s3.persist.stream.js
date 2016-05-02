@@ -7,7 +7,7 @@ var crypto = require('crypto');
 describe('S3 persist stream tests', function() {
 
   var buffer;
-  var options = {filename: 'test_file_' + (new Date().getTime()), organization: 'bigpanda_test', stream_id: 'abcdefghijklmnop'};
+  var options = {metadata_version: 'test_file_' + (new Date().getTime()), organization: 'bigpanda_test', stream_id: 'abcdefghijklmnop', bucket: 'bp-objects-cache'};
 
   function init(string, chunkSize, options) {
     buffer = new streamBuffers.ReadableStreamBuffer({
