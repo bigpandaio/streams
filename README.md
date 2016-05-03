@@ -8,7 +8,7 @@ Transform stream that splits text into lines
 
 ### Usage:
 ```javascript
-var LineInputStream = require('bp-streams).LineInputStream;
+var LineInputStream = require('bp-streams').LineInputStream;
 var stream = new LineInputStream(options);
 ```
 
@@ -25,7 +25,7 @@ Persists data the goes through the stream to a file and passes the raw data to t
 
 ### Usage:
 ```javascript
-var FilesystemPersistStream = require('bp-streams).FilesystemPersistStream;
+var FilesystemPersistStream = require('bp-streams').FilesystemPersistStream;
 var stream = new FilesystemPersistStream(options);
 ```
 
