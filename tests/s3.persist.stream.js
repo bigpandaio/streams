@@ -9,6 +9,9 @@ describe('S3 persist stream tests', function() {
   var buffer;
   var options = {metadata_version: 'test_file_' + (new Date().getTime()), organization: 'bigpanda_test', stream_id: 'abcdefghijklmnop', bucket: 'bp-objects-cache'};
 
+  // Let the upload process enough time to finish
+  this.timeout(10000);
+
   function init(string, chunkSize, options) {
     buffer = new streamBuffers.ReadableStreamBuffer({
       frequency: 1,                   // in milliseconds.
@@ -26,7 +29,8 @@ describe('S3 persist stream tests', function() {
     stream.on('persistdone', function(details) {
       s3.getObject({Bucket: details.Bucket, Key:details.Key}, function (err,data) {
         var md5sum = crypto.createHash('md5');
-        md5sum.update(data.Body.toString());
+
+        md5sum.update(data.Body);
         s3.deleteObjects({Bucket: details.Bucket, Delete: { Objects: [{Key: details.Key}] } }, function (err, data) {
           expect(err).to.be.null;
           expectFn(md5sum.digest('hex'));
@@ -35,19 +39,18 @@ describe('S3 persist stream tests', function() {
     });
   }
 
-  function getStringObject() {
-    var input = "Test text";
+  function getHash(input) {
     var md5sum = crypto.createHash('md5');
     md5sum.update(input);
-    return {"text": input, "hash": md5sum.digest('hex')};
+    return md5sum.digest('hex');
   }
 
   it('should upload the data to s3 with the same md5 as the source', function(done) {
-    this.timeout(10000);
-    var input = getStringObject();
-    var stream = init(input.text, 2048, options);
+    var input = "Test Text";
+    var stream = init(input, 2048, options);
+
     test(stream, function(downloadedHash) {
-      expect(downloadedHash).to.be.eql(input.hash);
+      expect(downloadedHash).to.be.eql(getHash(input));
       done();
     });
   });
