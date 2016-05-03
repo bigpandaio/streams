@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.3.5",
-    "s3-upload-stream": "^1.0.7"
+    "s3-upload-stream": "^1.0.7",
+    "underscore": "^1.8.3"
   }
 }
