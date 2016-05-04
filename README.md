@@ -49,7 +49,7 @@ __options:__
 
 | Name          | Description           | Default  |
 | :------------ |:-------------| :-----:|
-| metadata_version | filename | - |
+| filename | file name | - |
 | organization | top directory for seperating integrations by organization | - |
 | stream_id | directory for seperating files by integration | - |
 | bucket | bucket name to upload to | prod: 'bp-objects-cache'<br>dev: 'stage-bp-objects-cache' |

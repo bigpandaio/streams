@@ -7,9 +7,9 @@ var crypto = require('crypto');
 describe('S3 persist stream tests', function() {
 
   var buffer;
-  var options = {metadata_version: 'test_file_' + (new Date().getTime()),
-                 organization: 'bigpanda_test',
-                 stream_id: 'abcdefghijklmnop',
+  var options = {filename: 'test_file_' + (new Date().getTime()),
+                 maindir: 'bigpanda_test',
+                 subdir: 'abcdefghijklmnop',
                  bucket: 'stage-bp-objects-cache'};
 
   // Let the upload process enough time to finish
