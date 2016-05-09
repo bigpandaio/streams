@@ -21,7 +21,7 @@ __options:__
 
 ## FilesystemPersistStream
 
-Persists data the goes through the stream to a file and passes the raw data to the next stream
+Persists data that goes through the stream to a file and passes the raw data to the next stream
 
 ### Usage:
 ```javascript
@@ -35,6 +35,24 @@ __options:__
 | :------------ |:-------------| :-----:|
 | filename     | the target filename path | - |
 
+## S3PersistStream
+
+Persists data that goes through the stream to a bucket in S3 and passes the raw data to the next stream
+
+### Usage:
+```javascript
+var S3PersistStream = require('bp-streams').S3PersistStream;
+var stream = new S3PersistStream(options);
+```
+
+__options:__
+
+| Name          | Description           | Default  |
+| :------------ |:-------------| :-----:|
+| filename | file name | - |
+| organization | top directory for seperating integrations by organization | - |
+| stream_id | directory for seperating files by integration | - |
+| bucket | bucket name to upload to | prod: 'bp-objects-cache'<br>dev: 'stage-bp-objects-cache' |
 
 
 
