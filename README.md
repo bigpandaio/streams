@@ -50,8 +50,8 @@ __options:__
 | Name          | Description           | Default  |
 | :------------ |:-------------| :-----:|
 | filename | file name | - |
-| organization | top directory for seperating integrations by organization | - |
-| stream_id | directory for seperating files by integration | - |
+| maindir | top directory for seperating files| - |
+| subdir | secondary directory for another level of seperation | - |
 | bucket | bucket name to upload to | prod: 'bp-objects-cache'<br>dev: 'stage-bp-objects-cache' |
 
 
