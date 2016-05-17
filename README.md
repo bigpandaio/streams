@@ -52,7 +52,7 @@ __options:__
 | filename | file name | - |
 | maindir | top directory for seperating files| - |
 | subdir | secondary directory for another level of seperation | - |
-| bucket | bucket name to upload to | prod: 'bp-objects-cache'<br>dev: 'stage-bp-objects-cache' |
+| bucket | bucket name to upload to | - |
 
 
 
