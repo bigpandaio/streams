@@ -50,8 +50,7 @@ __options:__
 | Name          | Description           | Default  |
 | :------------ |:-------------| :-----:|
 | filename | file name | - |
-| maindir | top directory for seperating files| - |
-| subdir | secondary directory for another level of seperation | - |
+| path | 'filename' will be saved in this path | - |
 | bucket | bucket name to upload to | - |
 
 
