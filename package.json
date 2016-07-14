@@ -1,6 +1,6 @@
 {
   "name": "bp-streams",
-  "version": "0.1.2",
+  "version": "3.7.0",
   "description": "Useful streams",
   "main": "index.js",
   "scripts": {
@@ -20,10 +20,16 @@
   },
   "homepage": "https://github.com/bigpandaio/streams",
   "devDependencies": {
-    "chai": "^2.1.1",
-    "chai-things": "^0.2.0",
-    "mocha": "^2.2.1",
-    "randomstring": "^1.0.3",
-    "stream-buffers": "^2.1.0"
+    "chai": "2.1.1",
+    "chai-things": "0.2.0",
+    "crypto": "0.0.3",
+    "mocha": "2.2.1",
+    "randomstring": "1.0.3",
+    "stream-buffers": "2.1.0"
+  },
+  "dependencies": {
+    "aws-sdk": "2.3.5",
+    "s3-upload-stream": "1.0.7",
+    "underscore": "1.8.3"
   }
 }
