@@ -1,5 +1,5 @@
 {
-  "name": "bp-streams",
+  "name": "@bp/streams",
   "version": "3.7.0",
   "description": "Useful streams",
   "main": "index.js",
